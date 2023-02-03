@@ -17,6 +17,16 @@
 <DocsShell {settings}>
 	<!-- Slot: Usage -->
 	<svelte:fragment slot="usage">
+		<!-- prettier-ignore -->
+		<pre><code>{`
+for (let i = 1; i &lt;= 100; i++) {
+    let out = '';
+    if (i % 3 === 0) out += 'Fizz';
+    if (i % 5 === 0) out += 'Buzz';
+    console.log(out || i);
+}
+		`.trim()}</code></pre>
+
 		<section class="space-y-4">
 			<h2>Excluding Styles</h2>
 			<p>
